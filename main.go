@@ -1,8 +1,11 @@
+/*
+Copyright © 2024 NAME HERE <EMAIL ADDRESS>
+
+*/
 package main
 
-import "fmt"
+import "github.com/zeeshanahmad0201/ticker_trawler/cmd"
 
 func main() {
-	fmt.Println("Welcome to Ticker Trawler - A simple stock ticker price and ratios fetcher")
-
+	cmd.Execute()
 }
