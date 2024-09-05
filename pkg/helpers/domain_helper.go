@@ -1,4 +1,4 @@
-package validation
+package helpers
 
 import (
 	"regexp"
@@ -16,11 +16,6 @@ func ParseDomain(domain string) string {
 	if !strings.HasPrefix(domain, "http://") && !strings.HasPrefix(domain, "https://") {
 		// Default to "http://"
 		domain = "http://" + domain
-	}
-
-	// Ensure the domain ends with a trailing slash
-	if !strings.HasSuffix(domain, "/") {
-		domain += "/"
 	}
 
 	return domain
