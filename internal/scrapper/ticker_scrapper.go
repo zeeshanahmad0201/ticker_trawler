@@ -9,8 +9,7 @@ import (
 
 func ScrapePriceFromYahoo(ticker string) (float64, error) {
 	log.Println("Starting to scrape for ticker:", ticker)
-	// scrapeURL := "https://finance.yahoo.com/quote/" + ticker
-	scrapeURL := "https://sarmaaya.pk/psx/company/ENGRO"
+	scrapeURL := "https://finance.yahoo.com/quote/" + ticker
 
 	c := colly.NewCollector()
 
